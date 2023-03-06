@@ -6,3 +6,8 @@ Web Socket：长连接，云端能够向用户主动推荐消息。
 API的同步与异步：立即反馈结果/先反馈收到，在执行操作。
 UML：use case;协作图；时序图
 架构：MVC;SOA
+
+2023/3/6
+应用/服务->C/S
+K8s
+container容器
