@@ -1,4 +1,14 @@
-with open("input.txt", "r+") as f:
+import sys
+
+try:
+    input_file = sys.argv[1]
+    output_file = sys.argv[2]
+except:
+    print('请输入两个文本文件')
+    sys.exit()
+
+# with open(f"input.txt", "r+") as f:
+with open(f"{input_file}", "r+") as f:
     line_changed = ''
     for i in range(0, 6):
         line = f.readline()
@@ -20,5 +30,6 @@ with open("input.txt", "r+") as f:
             new_file = new_file + '-'
     print(new_file)
 
-with open("output.txt", "w+") as g:
+# with open("output.txt", "w+") as g:
+with open(f"{output_file}", "w+") as g:
     g.write(new_file)
