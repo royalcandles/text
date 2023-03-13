@@ -27,7 +27,7 @@ def csv_to_json(csv_file, json_file):
         json.dump(json_data, f, ensure_ascii=False)
 
 
-# 测试代码
+# # 测试代码
 if __name__ == '__main__':
     file_type = sys.argv[1]
     file_name = sys.argv[2]
